@@ -1,0 +1,282 @@
+/* ------Create page styles------ */
+
+.CreateView {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.InputDiv > input {
+  width: 90%;
+  margin-bottom: 4%;
+  padding-left: 10px;
+  height: 35px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.InputDiv > textarea {
+  width: 90%;
+  margin-bottom: 4%;
+  height: 70px;
+  padding-left: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.ButtonStyles {
+  width: 90%;
+  margin-bottom: 4%;
+  margin-top: 20px;
+  padding-left: 10px;
+  height: 35px;
+  background: none;
+  border: 1px solid #0e4686;
+  color: #0e4686;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.IconsDiv{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.hrefStyles{
+  color: black;
+}
+
+.AlignDiv1{
+  width: 33%;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.AlignDiv2{
+  width: 33%;
+  text-align: center;
+}
+
+.AlignDiv3{
+  width: 33%;
+  text-align: right;
+  color: #0e4686;
+  margin-right: 5%;
+}
+
+/* ------Home Page Styles------ */
+
+.ContainerDiv{
+  margin : 5% 15%;
+}
+
+.TitleDiv{
+  text-align: left;
+}
+
+.DivStyles{
+  display: flex;
+  flex-direction: row;
+}
+
+.DivStyles:first-child{
+  text-align: left;
+}
+
+.DivStyles:last-child{
+  text-align: right;
+}
+
+.InnerDivStyles{
+  color : grey;
+  text-transform: uppercase;
+  width : 50%;
+}
+
+.LikesDiv{
+  text-align: right;
+}
+
+.LoadingStyles{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.HomeMainDiv {
+  width: 100%;
+}
+
+.HomeMainDiv > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.HomeMainDiv > div:first-child {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.HomeMainDiv > div > div {
+  width: 350px;
+  margin: 20px;
+  border: 1px solid #D3D3D3;
+  padding: 10px;
+}
+
+.ArticleImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.DescDiv {
+  height: 150px;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.CreateButton {
+  padding: 10px 45px;
+  background-color: black;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.HomeMainDiv > div:first-child > h2 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.HomeMainDiv > div:first-child > a {
+  margin: 0px 20px 0px auto;
+}
+
+h4 {
+  margin:0px;
+  padding:0px;
+}
+
+.DateText {
+  text-align: end
+}
+
+.ImageDiv {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* ------ Details page styles ------ */
+
+.DetailMainDiv{
+  width: 100%;
+}
+
+.DetailMainDiv > div:first-child {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.DetailMainDiv > div:first-child > h2 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  margin-left: 150px;
+}
+
+.DetailMainDiv > div:first-child > a {
+  margin: 0px 150px 0px auto;
+}
+
+.DetailPageImage {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.HomeButton {
+  padding: 10px 45px;
+  background-color: black;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.MainDiv {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid #D3D3D3;
+  padding: 20px 40px;
+}
+
+.DescriptionDiv{
+  text-align: justify;
+}
+
+/* ------ Styles for Mobile screens ------ */
+
+@media (max-width: 480px) {
+
+  /* ------- For Home page ------ */
+
+  .HomeMainDiv > div:first-child {
+    display: block;
+    text-align: center;
+  }
+
+  .HomeMainDiv > div:first-child > a {
+    margin: 0px 0px 0px auto;
+  }
+
+  .HomeMainDiv > div:first-child > h2 {
+    margin: 0px 0px 20px auto;
+    font-size: 20px;
+  }
+
+  .ImageDiv {
+    height: 350px;
+    width : 100%;
+    object-fit: contain;
+  }
+
+  /* ------ For Detail page ------ */
+
+  .DetailMainDiv > div:first-child {
+    display: block;
+    text-align: center;
+  }
+
+  .DetailMainDiv > div:first-child > a {
+    margin: 0px 0px 0px auto;
+  }
+
+  .DetailMainDiv > div:first-child > h2 {
+    margin: 0px 0px 20px auto;
+    font-size: 20px;
+  }
+
+  .MainDiv {
+    width: 90%;
+    padding: 5px;
+  }
+
+  /* ------ For Create page ------ */
+
+  .CreateView {
+    width: 100%;
+  }
+
+}
+
